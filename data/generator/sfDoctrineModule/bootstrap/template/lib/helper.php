@@ -40,7 +40,7 @@ abstract class Base<?php echo ucfirst($this->getModuleName()) ?>GeneratorHelper 
     }
 
     // return link_to('<i class="icon-trash"></i> '. __($params['label'], array(), 'sf_admin'), $this->getUrlForAction('delete'), $object, array('class' => 'btn', 'method' => 'delete', 'confirm' => !empty($params['confirm']) ? __($params['confirm'], array(), 'sf_admin') : $params['confirm']));
-    return link_to('<i class="icon-trash icon-white"></i>', $this->getUrlForAction('delete'), $object, array('class' => 'btn btn-danger pull-right', 'method' => 'delete', 'confirm' => !empty($params['confirm']) ? __($params['confirm'], array(), 'sf_admin') : $params['confirm']));
+    return link_to('<i class="icon-trash icon-white"></i>', $this->getUrlForAction('delete'), $object, array('class' => 'btn btn-danger', 'method' => 'delete', 'confirm' => !empty($params['confirm']) ? __($params['confirm'], array(), 'sf_admin') : $params['confirm']));
   }
 
   public function linkToList($params)
